@@ -16,6 +16,7 @@ import RockVert from "./assets/Rock_vert.png";
 import Bashka from "./assets/Bashka.mov";
 import Cafworking from "./assets/Cafworking.mov";
 import CubicMeter from "./assets/CubicMeter.mov";
+import Babel from "./assets/GB.mov"
 // import asds from "./assets/aSda.mp4";
 
 import "./App.css";
@@ -26,7 +27,7 @@ function App() {
   return (
     <>
       {" "}
-      <Header/>
+      <Header />
       <section className="model">
         <div className="container">
           <video src={Bashka} autoPlay loop muted></video>
@@ -107,9 +108,9 @@ function App() {
         </div>
         <div className="arch-item">
           <div className="container">
-            <h3 className="arch-item__title">NEEDLE</h3>
+            <h3 className="arch-item__title">BABEL</h3>
           </div>
-          <video src={Cafworking} autoPlay loop muted></video>
+          <video src={Babel} autoPlay loop muted></video>
         </div>
 
         <div className="container">
