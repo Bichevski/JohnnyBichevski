@@ -528,6 +528,7 @@ section::after {
   /* цшв  */
   width: 100%;
   object-fit: cover;
+  height: auto;
   /* object-fit: cover; */
 }
 
@@ -547,6 +548,26 @@ section::after {
 /* " */
 
 @media (width <= 850px) {
+  .gallery-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery-wrapper div {
+    grid-row: auto !important;
+    grid-column: auto !important;
+  }
+
+  .rock--vert img {
+    /* object-position: 50px; */
+    object-position: 0px 65%;
+    /* height: 600px;bottom l*/
+    /* gr */
+  }
+
+  .less--vert img {
+    object-position: 0 70%;
+  }
+
   .header-menu__list {
     flex-direction: column;
     /* bottom: 100%; */

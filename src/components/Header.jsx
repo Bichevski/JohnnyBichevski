@@ -4,6 +4,7 @@ import cn from "classnames";
 import telegram from "../assets/telegram.svg";
 import mail from "../assets/mail.svg";
 import Time from "./Time";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -41,7 +42,7 @@ const Header = () => {
           </div>
         </div>
         <Time className="header__time"/>
-        {/* <span className="time header__time">12:00</span> */}
+        {/* <span className="time header__time">12:00</span>МенюОкружение */}
       </div>
       <div className="header__menus">
         <div className={cn("header-menu", { open: isMenuOpen })}>
@@ -50,17 +51,17 @@ const Header = () => {
             className="header-menu__btn"
             onClick={toggleMenu}
           >
-            Меню
+            Menu
           </button>
           <ul className="header-menu__list">
             <li className="header-menu__item">
-              <a href="#">Home</a>
+              <Link to="/JohnnyBichevski" href="#">Home</Link>
             </li>
             <li className="header-menu__item">
-              <a href="#">Gallery</a>
+              <Link to="/JohnnyBichevski/gallery">Gallery</Link>
             </li>
             <li className="header-menu__item">
-              <a href="#">About</a>
+              <Link to="/JohnnyBichevski?ScrollToAbout">About</Link>
             </li>
           </ul>
         </div>
@@ -80,5 +81,6 @@ const Header = () => {
     </header>
   );
 };
-
+// /
 export default Header;
+// ?abouta/JohnnyBichevski#skillsa
