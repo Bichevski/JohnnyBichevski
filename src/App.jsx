@@ -4,7 +4,6 @@
 // a
 // import vidos from './assets/vidos.mov';vhorasdstime
 
-
 import LesHor from "./assets/Les_hor.png";
 import LesOverlay from "./assets/Les_overlay.png";
 import LesVert from "./assets/Les_vert.png";
@@ -16,7 +15,7 @@ import RockVert from "./assets/Rock_vert.png";
 import Bashka from "./assets/Bashka.mov";
 import Cafworking from "./assets/Cafworking.mov";
 import CubicMeter from "./assets/CubicMeter.mov";
-import Babel from "./assets/GB.mov"
+import Babel from "./assets/GB.mov";
 // import asds from "./assets/aSda.mp4";
 
 import "./App.css";
@@ -37,54 +36,24 @@ function App() {
         <div className="container">
           <h2 className="section-title environment__title">Окружение</h2>
           <div className="environment-wrapper forest">
-            <img
-              src={LesOverlay}
-              width="1072"
-              height="600"
-              alt="forest"
-            />
+            <img src={LesOverlay} width="1072" height="600" alt="forest" />
             <ul className="environment-photos">
               <li className="environment-photos__photo">
-                <img
-                  src={LesHor}
-                  alt="top-left"
-                  width="554"
-                  height="415"
-                />
+                <img src={LesHor} alt="top-left" width="554" height="415" />
               </li>
               <li className="environment-photos__photo">
-                <img
-                  src={LesVert}
-                  width="250"
-                  height="582"
-                  alt="top-right"
-                />
+                <img src={LesVert} width="250" height="582" alt="top-right" />
               </li>
             </ul>
           </div>
           <div className="environment-wrapper rock">
-            <img
-              src={RockOverlay}
-              alt="rock"
-              width="1072"
-              height="830"
-            />
+            <img src={RockOverlay} alt="rock" width="1072" height="830" />
             <ul className="environment-photos">
               <li className="environment-photos__photo">
-                <img
-                  src={RockHor1}
-                  alt="top-left"
-                  width="554"
-                  height="415"
-                />
+                <img src={RockHor1} alt="top-left" width="554" height="415" />
               </li>
               <li className="environment-photos__photo">
-                <img
-                  src={RockVert}
-                  width="270"
-                  height="1200"
-                  alt="top-right"
-                />
+                <img src={RockVert} width="270" height="1200" alt="top-right" />
               </li>
               <li className="environment-photos__photo">
                 <img
@@ -106,16 +75,18 @@ function App() {
             <video src={Cafworking} autoPlay loop muted></video>
           </div>
         </div>
-        <div className="arch-item">
+        <div className="arch-item babel">
           <div className="container">
             <h3 className="arch-item__title">BABEL</h3>
           </div>
           <video src={Babel} autoPlay loop muted></video>
         </div>
 
-        <div className="container">
-          <div className="arch-item">
+        <div className="arch-item">
+          <div className="container">
             <h3 className="arch-item__title">CUBIC METER</h3>
+          </div>
+          <div>
             <video src={CubicMeter} autoPlay loop muted></video>
           </div>
         </div>
